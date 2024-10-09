@@ -28,7 +28,6 @@ requirements:
     - scipy >=1.10
     - scikit-learn >=1.5.0
     - python-xxhash >=3.3
-    - maite
   run_constrained:
     - matplotlib-base *
     - nvidia-cudnn-cu11 >=8.6.0.163
