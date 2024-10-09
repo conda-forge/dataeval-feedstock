@@ -1,5 +1,5 @@
 {% set name = "dataeval" %}
-{% set version = "0.69.3" %}
+{% set version = "0.69.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: 4c29eb27aba077d43afab50a9dce2399da69a2af7e41c7b978a97aa6ed913792
+  sha256: ff1ecd1057ed20ad6ef0fc197ea04307b0af62cdd14cee6b55f6f3bd333348a6
 
 build:
   noarch: python
@@ -28,7 +28,6 @@ requirements:
     - scipy >=1.10
     - scikit-learn >=1.5.0
     - python-xxhash >=3.3
-    - maite
   run_constrained:
     - matplotlib-base *
     - nvidia-cudnn-cu11 >=8.6.0.163
