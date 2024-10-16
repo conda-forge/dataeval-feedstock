@@ -1,5 +1,5 @@
 {% set name = "dataeval" %}
-{% set version = "0.69.4" %}
+{% set version = "0.70.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: ff1ecd1057ed20ad6ef0fc197ea04307b0af62cdd14cee6b55f6f3bd333348a6
+  sha256: 94646f8ca4141c593cd9b12cc6c41fb6ec28226b3e2cb34cc7f0ea4a26c4d76d
 
 build:
   noarch: python
@@ -34,7 +34,8 @@ requirements:
     - tensorflow >=2.14.1,<2.16
     - tensorflow-io-gcs-filesystem >=0.35.0,<0.37
     - tensorflow_probability >=0.22.1,<0.24
-    - pytorch >=2.0.1,!=2.2.0
+    - pytorch >=2.2.0
+    - torchvision >=0.17.0
 
 test:
   imports:
