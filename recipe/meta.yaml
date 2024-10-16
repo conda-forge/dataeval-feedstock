@@ -34,7 +34,8 @@ requirements:
     - tensorflow >=2.14.1,<2.16
     - tensorflow-io-gcs-filesystem >=0.35.0,<0.37
     - tensorflow_probability >=0.22.1,<0.24
-    - pytorch >=2.0.1,!=2.2.0
+    - pytorch >=2.2.0
+    - torchvision >=0.17.0
 
 test:
   imports:
