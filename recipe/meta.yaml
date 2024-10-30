@@ -1,5 +1,5 @@
 {% set name = "dataeval" %}
-{% set version = "0.71.1" %}
+{% set version = "0.72.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: 09f6c6de621f60847e75f4374e081d9fe1d2c91d13417dec8a0872066430f240
+  sha256: dcad65d615ebc95384dab9e208e1251adecc55309c020ca564c4515b8c378330
 
 build:
   noarch: python
@@ -31,10 +31,10 @@ requirements:
     - python-xxhash >=3.3
   run_constrained:
     - matplotlib-base *
-    - nvidia-cudnn-cu11 >=8.6.0.163
-    - tensorflow >=2.14.1,<2.16
-    - tensorflow-io-gcs-filesystem >=0.35.0,<0.37
-    - tensorflow_probability >=0.22.1,<0.24
+    - cudnn >=8.6.0.163
+    - tensorflow >=2.16
+    - tensorflow_probability >=0.24
+    - tf-keras >=2.16
     - pytorch >=2.2.0
     - torchvision >=0.17.0
 
