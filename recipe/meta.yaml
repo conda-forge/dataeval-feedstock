@@ -1,5 +1,5 @@
 {% set name = "dataeval" %}
-{% set version = "0.72.0" %}
+{% set version = "0.72.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: dcad65d615ebc95384dab9e208e1251adecc55309c020ca564c4515b8c378330
+  sha256: 80c845f4816a5b0bb76500527e80c3f05c8e6eee8f52b99fd982ebc477227718
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - hdbscan >=0.8.36
     - numpy >1.24.3
     - pillow >=10.3.0
@@ -31,8 +31,8 @@ requirements:
     - python-xxhash >=3.3
   run_constrained:
     - matplotlib-base *
-    - cudnn >=8.6.0.163
-    - tensorflow >=2.16
+    - cudnn >=9.1.0.70
+    - tensorflow >=2.16,<2.18
     - tensorflow_probability >=0.24
     - tf-keras >=2.16
     - pytorch >=2.2.0
