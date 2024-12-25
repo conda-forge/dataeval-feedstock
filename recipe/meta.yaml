@@ -1,5 +1,5 @@
 {% set name = "dataeval" %}
-{% set version = "0.73.1" %}
+{% set version = "0.74.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: dfacdaaefe544674dd4c247ad1e1ca4337726f5cb78c1b38be5d6ee109fcab6f
+  sha256: bf72974a866b3342d30827092991bff61671fb32513d9d351bd28e86d0d659dd
 
 build:
   noarch: python
