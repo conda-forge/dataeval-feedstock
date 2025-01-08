@@ -1,5 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.74.2" %}
+{% set version = "0.75.0" %}
+{% set sha256 = "43b81c7e2e24275bb27f163ed2ae77d633d508e0dc998eff67cb18dffb888c43" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
-  sha256: bf72974a866b3342d30827092991bff61671fb32513d9d351bd28e86d0d659dd
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,22 +23,19 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<3.13
-    - hdbscan >=0.8.36
+    - matplotlib-base *
     - numpy >1.24.3
+    - nvidia::cudnn =9.3.0.75-cuda11.8
     - pillow >=10.3.0
+    - python-xxhash >=3.3
+    - pytorch::pytorch >=2.2.0
+    - pytorch::pytorch-cuda =11.8
+    - requests *
     - scipy >=1.10
     - scikit-learn >=1.5.0
+    - pytorch::torchvision >=0.17.0
     - tqdm *
-    - typing_extensions *
-    - python-xxhash >=3.3
-  run_constrained:
-    - matplotlib-base *
-    - cudnn >=9.1.0.70
-    - tensorflow >=2.16,<2.18
-    - tensorflow_probability >=0.24,<0.25
-    - tf-keras >=2.16,<2.18
-    - pytorch >=2.2.0
-    - torchvision >=0.17.0
+    - typing_extensions >=4.12
 
 test:
   imports:
