@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.84.1" %}
-{% set sha256 = "9c521739e80ba993854cea11b64763fa1f014bf6342f59cc3562fd4092a8f6e3" %}
+{% set version = "0.86.3" %}
+{% set sha256 = "cf77c22be03de41323db8465c77c2b7d4bce8dcb0bbfae823bf23a43f1bb8d96" %}
 
 package:
   name: {{ name|lower }}
@@ -25,9 +25,10 @@ requirements:
     - defusedxml >=0.7.1
     - fast_hdbscan 0.2.0
     - numba >=0.59.1
-    - python >={{ python_min }},<3.13
     - numpy >=1.24.2
     - pillow >=10.3.0
+    - polars >=1.0
+    - python >={{ python_min }},<3.13
     - python-xxhash >=3.3
     - pytorch >=2.2.0
     - requests
