@@ -24,6 +24,7 @@ requirements:
   run:
     - defusedxml >=0.7.1
     - fast_hdbscan 0.2.0
+    - lightgbm >=4
     - numba >=0.59.1
     - numpy >=1.24.2
     - pandas >=2.0
