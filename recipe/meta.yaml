@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.86.4" %}
-{% set sha256 = "38903854bc37407490027d052a6b2d81cf15149d82eea3fd19c21f5ec2b3d175" %}
+{% set version = "0.86.5" %}
+{% set sha256 = "a472592775c5e6451758857369710f89b7e67cb8bc0e8e028ca5447caf90d7c9" %}
 
 package:
   name: {{ name|lower }}
