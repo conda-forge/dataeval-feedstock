@@ -1,6 +1,7 @@
 {% set name = "dataeval" %}
-{% set version = "0.86.7" %}
-{% set sha256 = "d6596b70c6977a4bf886147f17a60dbe3f1e72265ef5df422a0fb84ed4fd68dd" %}
+{% set version = "0.92.3" %}
+{% set sha256 = "66b7beeb82071cf96f803105567265ece68d3bdf2a1c98d3ce5a786db91700fe" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,26 +19,25 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
-    - poetry-dynamic-versioning
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - defusedxml >=0.7.1
     - fast_hdbscan 0.2.0
     - lightgbm >=4
-    - numba >=0.59.1
-    - numpy >=1.24.2
-    - pandas >=2.0
+    - numba >=0.61.0
+    - numpy >=1.26.2,<2.3
+    - pandas >=2.2.3
     - pillow >=10.3.0
     - polars >=1.0
     - python >={{ python_min }},<3.13
     - python-xxhash >=3.3
     - pytorch >=2.2.0
-    - requests
-    - scipy >=1.10
+    - scipy >=1.14.1
     - scikit-learn >=1.5.0
     - torchvision >=0.17.0
-    - tqdm
+    - tqdm >=4.66
     - typing_extensions >=4.12
 
 test:
@@ -53,7 +53,7 @@ about:
   home: https://dataeval.ai/
   summary: DataEval provides a simple interface to characterize image data and its impact on model performance across classification and object-detection tasks
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
