@@ -53,6 +53,7 @@ about:
   home: https://dataeval.ai/
   summary: DataEval provides a simple interface to characterize image data and its impact on model performance across classification and object-detection tasks
   license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
