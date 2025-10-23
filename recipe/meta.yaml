@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.92.3" %}
-{% set sha256 = "66b7beeb82071cf96f803105567265ece68d3bdf2a1c98d3ce5a786db91700fe" %}
+{% set version = "0.93.1" %}
+{% set sha256 = "0d5feec7d5f707b27bbfb35992f6ed4234acbe51ca8b5d44cfd801ff3fdb251d" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -23,18 +23,19 @@ requirements:
     - hatch-vcs
     - pip
   run:
+    - psutil >=7.0.0
     - defusedxml >=0.7.1
-    - fast_hdbscan 0.2.0
+    - fast_hdbscan ==0.2.0
     - lightgbm >=4
     - numba >=0.61.0
-    - numpy >=1.26.2,<2.3
-    - pandas >=2.2.3
+    - numpy >=1.24.2,<2.3
+    - pandas >=2.0.0
     - pillow >=10.3.0
-    - polars >=1.0
+    - polars >=1.0.0
     - python >={{ python_min }},<3.13
     - python-xxhash >=3.3
     - pytorch >=2.2.0
-    - scipy >=1.14.1
+    - scipy >=1.10.0
     - scikit-learn >=1.5.0
     - torchvision >=0.17.0
     - tqdm >=4.66
