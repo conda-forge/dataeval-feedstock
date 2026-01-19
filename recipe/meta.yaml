@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.93.1" %}
-{% set sha256 = "0d5feec7d5f707b27bbfb35992f6ed4234acbe51ca8b5d44cfd801ff3fdb251d" %}
+{% set version = "0.94.0" %}
+{% set sha256 = "e765cea18492ab32f6bd454c6aed265bab3ead05ec48d2e9ee5b471bc4bfa50b" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -33,7 +33,7 @@ requirements:
     - pillow >=10.3.0
     - polars >=1.0.0
     - python >={{ python_min }},<3.13
-    - python-xxhash >=3.3
+    - python-xxhash >=3.4
     - pytorch >=2.2.0
     - scipy >=1.10.0
     - scikit-learn >=1.5.0
