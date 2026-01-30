@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.94.0" %}
-{% set sha256 = "e765cea18492ab32f6bd454c6aed265bab3ead05ec48d2e9ee5b471bc4bfa50b" %}
+{% set version = "0.95.0" %}
+{% set sha256 = "810d355ae0efc849a3693d45bb3d1441f5f26bd4e3b5fb787cfb96ef216c62ae" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -24,21 +24,16 @@ requirements:
     - pip
   run:
     - psutil >=7.0.0
-    - defusedxml >=0.7.1
-    - fast_hdbscan ==0.2.0
     - lightgbm >=4
     - numba >=0.61.0
-    - numpy >=1.24.2,<2.3
-    - pandas >=2.0.0
-    - pillow >=10.3.0
+    - numpy >=1.24.2
     - polars >=1.0.0
     - python >={{ python_min }},<3.13
     - python-xxhash >=3.4
     - pytorch >=2.2.0
+    - pydantic >=2.8
     - scipy >=1.10.0
     - scikit-learn >=1.5.0
-    - torchvision >=0.17.0
-    - tqdm >=4.66
     - typing_extensions >=4.12
 
 test:
