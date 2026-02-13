@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "0.95.0" %}
-{% set sha256 = "810d355ae0efc849a3693d45bb3d1441f5f26bd4e3b5fb787cfb96ef216c62ae" %}
+{% set version = "1.0.0rc0" %}
+{% set sha256 = "0337d352faba11427e4c8d11031e052c5198a53a893694b44326ab2288be3db9" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -28,7 +28,7 @@ requirements:
     - numba >=0.61.0
     - numpy >=1.24.2
     - polars >=1.0.0
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - python-xxhash >=3.4
     - pytorch >=2.2.0
     - pydantic >=2.8
