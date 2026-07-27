@@ -1,6 +1,6 @@
 {% set name = "dataeval" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "5816dc1cefbcb9b6934064e9db70725100108c64c9316b7f9a4e5e52fbf5b1a6" %}
+{% set version = "1.1.0rc1" %}
+{% set sha256 = "4f9f80ae0885ba00e3da10c78178be7ed2b868e8c004cfcbf9f3463489df85f4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -25,6 +25,7 @@ requirements:
   run:
     - psutil >=7.0.0
     - lightgbm >=4
+    - maite >=0.9.4
     - numba >=0.61.0
     - numpy >=1.24.2
     - polars >=1.0.0
