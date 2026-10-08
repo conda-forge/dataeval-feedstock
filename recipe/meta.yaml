@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/dataeval-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -23,6 +23,7 @@ requirements:
     - hatch-vcs
     - pip
   run:
+    - torchvision >=0.17.0
     - psutil >=7.0.0
     - lightgbm >=4
     - maite >=0.9.4
